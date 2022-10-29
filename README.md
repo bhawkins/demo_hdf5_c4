@@ -27,3 +27,5 @@ read as c8
 ... 3.450837 seconds
 done
 ```
+
+![profile](images/profile.png)
