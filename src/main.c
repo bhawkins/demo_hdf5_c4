@@ -14,11 +14,10 @@ void print_elapsed(clock_t* t)
 }
 
 
-void convert_f2_to_f4(size_t n, const _Float16 *h, float *f)
+void convert_f2_to_f4(const size_t n, const _Float16 *h, float *f)
 {
-    const float *end = f + n;
-    for (; f<end; ++f) {
-        *f = *h++;
+    for (size_t i=0; i<n; ++i) {
+        f[i] = h[i];
     }
 }
 
